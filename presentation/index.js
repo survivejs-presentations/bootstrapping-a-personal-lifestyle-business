@@ -38,9 +38,12 @@ require("spectacle/lib/themes/default/index.css");
 require("./custom.css");
 
 const slideTransition = ["slide"];
-const images = mapValues({
-  survivejs: require("../images/survivejs.png")
-}, (v) => v.replace("/", ""));
+const images = mapValues(
+  {
+    survivejs: require("../images/survivejs.png")
+  },
+  v => v.replace("/", "")
+);
 
 preloader(images);
 
@@ -57,7 +60,10 @@ export default class Presentation extends React.Component {
       <Deck transition={slideTransition} transitionDuration={500} theme={theme}>
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-            Template
+            Case SurviveJS
+          </Heading>
+          <Heading size={2} fit caps lineHeight={1} textColor="primary">
+            Bootstrapping a personal lifestyle business
           </Heading>
         </Slide>
 
@@ -66,7 +72,7 @@ export default class Presentation extends React.Component {
             JavaScript Usage on Sites
           </Heading>
           <Markdown>
-        {`
+            {`
 * 2011 - 38.2%
 * 2013 - 60.4%
 * 2015 - 70.5%
@@ -140,13 +146,20 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1}>
-            The Problem of Template
-          </Heading>
+          <Heading size={1}>The Problem of Template</Heading>
           <List>
-            <Appear><ListItem>Problem 1</ListItem></Appear>
-            <Appear><ListItem>Problem 2</ListItem></Appear>
-            <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - Actions, stores, dispatcher</ListItem></Appear>
+            <Appear>
+              <ListItem>Problem 1</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Problem 2</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="https://facebook.github.io/flux/">Flux</Link> -
+                Actions, stores, dispatcher
+              </ListItem>
+            </Appear>
           </List>
         </Slide>
 
@@ -155,15 +168,11 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={2}>
-            Solution
-          </Heading>
+          <Heading size={2}>Solution</Heading>
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={4}>
-            Minimal Demo
-          </Heading>
+          <Heading size={4}>Minimal Demo</Heading>
           <CodePane
             lang="jsx"
             source={require("raw-loader!../examples/demo.jsx")}
@@ -172,23 +181,25 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading size={1}>
-            Exercises
-          </Heading>
+          <Heading size={1}>Exercises</Heading>
           <List>
-            <Appear><ListItem>Exercise 1</ListItem></Appear>
-            <Appear><ListItem>*Exercise 2</ListItem></Appear>
-            <Appear><ListItem>**Exercise 3</ListItem></Appear>
+            <Appear>
+              <ListItem>Exercise 1</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>*Exercise 2</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>**Exercise 3</ListItem>
+            </Appear>
           </List>
         </Slide>
 
         <Slide transition={slideTransition}>
           <Link href="https://www.survivejs.com/">
-            <Heading size={1}>
-              SurviveJS
-            </Heading>
+            <Heading size={1}>SurviveJS</Heading>
           </Link>
-          <Image src={images.survivejs} margin="0px auto 40px" height="524px"/>
+          <Image src={images.survivejs} margin="0px auto 40px" height="524px" />
         </Slide>
 
         <Slide transition={slideTransition} bgColor="tertiary">
