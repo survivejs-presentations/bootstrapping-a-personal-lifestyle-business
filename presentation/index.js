@@ -6,7 +6,7 @@ import mapValues from "lodash/mapValues";
 import {
   Appear,
   BlockQuote,
-  //Cite,
+  Cite,
   CodePane,
   Deck,
   //Fill,
@@ -67,6 +67,212 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Business
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Background</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Vocational studies (electronics, abitur), university (MSc)
+                (software engineering, business, mathematics)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Freelancing through a co-op and startup experiences
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Realized these are dead ends if I want to go somewhere in life
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Background</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                I came by a webpack related blog post by Christian Alfoni and
+                started brewing a book idea (2014 October)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>SurviveJS was born as a result (2015 January)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Business idea: cover related topics to help people deal with
+                JavaScript
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Started from webpack and React. Still exploring the space.
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Publishing</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Decided to self-publish (publisher was not interested) through
+                LeanPub (later Amazon)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                First three months were tough. Saved by Jésus Rodriquez
+                (thanks!), my first technical editor
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="black">
+          <BlockQuote>
+            <Quote>
+              If you want to travel fast, travel alone. To travel far, travel
+              together.
+            </Quote>
+            <Cite>African proverb</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Community</Heading>
+          <List>
+            <Appear>
+              <ListItem>Semi-open approach</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Most content available through web (needed visibility to help
+                with marketing) and open for comments
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Set up a book site and chat early on to develop community
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Collaboration through GitHub (edits, PRs)</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Technology</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Content in text format - custom Markdown (Markua)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Collaboration through GitHub (edits, PRs)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Site using <Link href="https://antwar.js.org/">
+                  Antwar
+                </Link>{" "}
+                (own, custom tool), GitHub Pages, Cloudflare
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Gitter for Chat, Disqus for commenting</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Marketing</Heading>
+          <List>
+            <Appear>
+              <ListItem>Focus on inbound channels (site, Twitter)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Community service through developer interviews (60+ and
+                counting)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Idea: provide exposure to lesser known ideas and developers
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Business Models</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Products - I.e. writing books. Successful but time consuming.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Contracting - I.e. developing specific functionality. Good short
+                term but sacrifices long term success.
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Consulting and training - I.e. helping with specific problem(s).
+                Better but a similar problem (less pronounced).
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Current model - Books + upsell consulting/training
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Lifestyle
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Personal
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="black">
+          <BlockQuote>
+            <Quote>
+              There are two great days in a person’s life – the day we are born
+              and the day we discover why
+            </Quote>
+            <Cite>William Barclay</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary" fit>
+            Conclusion
+          </Heading>
+        </Slide>
+
         <Slide transition={slideTransition}>
           <Heading caps fit size={1}>
             JavaScript Usage on Sites
@@ -105,12 +311,6 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        <Slide transition={slideTransition} bgColor="black">
-          <BlockQuote>
-            <Quote>Java is to JavaScript as car is to carpet</Quote>
-          </BlockQuote>
-        </Slide>
-
         <Slide transition={slideTransition}>
           <Heading caps fit size={1}>
             Build Tools
@@ -143,24 +343,6 @@ export default class Presentation extends React.Component {
               </tbody>
             </Table>
           </Layout>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={1}>The Problem of Template</Heading>
-          <List>
-            <Appear>
-              <ListItem>Problem 1</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Problem 2</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <Link href="https://facebook.github.io/flux/">Flux</Link> -
-                Actions, stores, dispatcher
-              </ListItem>
-            </Appear>
-          </List>
         </Slide>
 
         <Slide transition={slideTransition}>
