@@ -68,9 +68,29 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={2} textColor="tertiary" fit>
-            Business
+          <Heading size={2} textColor="tertiary">
+            Entrepreneurship
           </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              AKA
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              Yrittäjyys in Finnish
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              which means
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              "Trying" in English
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide transition={slideTransition}>
@@ -246,15 +266,55 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={2} textColor="tertiary" fit>
+          <Heading size={2} textColor="tertiary">
             Lifestyle
           </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              AKA
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              Elämäntapa in Finnish
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              which means
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              "The way of living" in English
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={2} textColor="tertiary" fit>
+          <Heading size={2} textColor="tertiary">
             Personal
           </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              AKA
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              Henkilökohtainen in Finnish
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              which means
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              "Personal" in English
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="black">
