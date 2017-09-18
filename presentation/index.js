@@ -40,7 +40,14 @@ require("./custom.css");
 const slideTransition = ["slide"];
 const images = mapValues(
   {
-    survivejs: require("../images/survivejs.png")
+    deadEnd: require("../images/dead-end.jpg"),
+    drip: require("../images/drip.jpg"),
+    javascript: require("../images/javascript.jpg"),
+    megaphone: require("../images/megaphone.jpg"),
+    survivejs: require("../images/survivejs.png"),
+    openclosed: require("../images/openclosed.jpg"),
+    telaviv: require("../images/telaviv.jpg"),
+    wheel: require("../images/wheel.jpg")
   },
   v => v.replace("/", "")
 );
@@ -65,6 +72,57 @@ export default class Presentation extends React.Component {
           <Heading size={2} fit caps lineHeight={1} textColor="primary">
             Bootstrapping a personal lifestyle business
           </Heading>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.drip}
+          bgDarken={0.75}
+        >
+          <Heading size={2} textColor="tertiary">
+            Or
+          </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              how a single blog comment
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              can
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              change
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              your life
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary">
+            Topics
+          </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              Entrepreneurship
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              Lifestyle
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              Personal
+            </Heading>
+          </Appear>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -93,18 +151,21 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        <Slide transition={slideTransition}>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
           <Heading size={1}>Background</Heading>
-          <List>
+          <List textColor="primary">
             <Appear>
               <ListItem>
-                Vocational studies (electronics, abitur), university (MSc)
-                (software engineering, business, mathematics)
+                Vocational studies and abitur, university (Master of Science)
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Freelancing through a co-op and startup experiences
+                Freelancing through a co-op (RIP) and startup experiences
               </ListItem>
             </Appear>
             <Appear>
@@ -115,9 +176,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition}>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
           <Heading size={1}>Background</Heading>
-          <List>
+          <List textColor="primary">
             <Appear>
               <ListItem>
                 I came by a webpack related blog post by Christian Alfoni and
@@ -125,12 +190,16 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem>SurviveJS was born as a result (2015 January)</ListItem>
+              <ListItem>
+                <Link href="https://survivejs.com/" textColor="primary">
+                  SurviveJS
+                </Link>{" "}
+                was born as a result (2015 January)
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Business idea: cover related topics to help people deal with
-                JavaScript
+                <b>Business idea:</b> help people deal with JavaScript
               </ListItem>
             </Appear>
             <Appear>
@@ -145,21 +214,29 @@ export default class Presentation extends React.Component {
           <Heading size={1}>Publishing</Heading>
           <List>
             <Appear>
+              <ListItem>Pitched to a publisher. No interest.</ListItem>
+            </Appear>
+            <Appear>
               <ListItem>
-                Decided to self-publish (publisher was not interested) through
-                LeanPub (later Amazon)
+                Decided to self-publish through LeanPub (later Amazon KDP)
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                First three months were tough. Saved by Jésus Rodriquez
-                (thanks!), my first technical editor
+                First three months were tough. Saved by{" "}
+                <Link href="https://github.com/foxandxss">
+                  Jésus Rodriquez
+                </Link>, my first technical editor
               </ListItem>
             </Appear>
           </List>
         </Slide>
 
-        <Slide transition={slideTransition} bgColor="black">
+        <Slide
+          transition={slideTransition}
+          bgImage={images.telaviv}
+          bgDarken={0.75}
+        >
           <BlockQuote>
             <Quote>
               If you want to travel fast, travel alone. To travel far, travel
@@ -169,9 +246,13 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
-        <Slide transition={slideTransition}>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.openclosed}
+          bgDarken={0.75}
+        >
           <Heading size={1}>Community</Heading>
-          <List>
+          <List textColor="primary">
             <Appear>
               <ListItem>Semi-open approach</ListItem>
             </Appear>
@@ -192,9 +273,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition}>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.wheel}
+          bgDarken={0.75}
+        >
           <Heading size={1}>Technology</Heading>
-          <List>
+          <List textColor="white">
             <Appear>
               <ListItem>
                 Content in text format - custom Markdown (Markua)
@@ -205,10 +290,11 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Site using <Link href="https://antwar.js.org/">
+                Site using{" "}
+                <Link href="https://antwar.js.org/" textColor="primary">
                   Antwar
                 </Link>{" "}
-                (own, custom tool), GitHub Pages, Cloudflare
+                (own tool), GitHub Pages, Cloudflare
               </ListItem>
             </Appear>
             <Appear>
@@ -217,9 +303,13 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition}>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.megaphone}
+          bgDarken={0.75}
+        >
           <Heading size={1}>Marketing</Heading>
-          <List>
+          <List textColor="white">
             <Appear>
               <ListItem>Focus on inbound channels (site, Twitter)</ListItem>
             </Appear>
@@ -331,110 +421,6 @@ export default class Presentation extends React.Component {
           <Heading size={2} textColor="tertiary" fit>
             Conclusion
           </Heading>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
-            JavaScript Usage on Sites
-          </Heading>
-          <Markdown>
-            {`
-* 2011 - 38.2%
-* 2013 - 60.4%
-* 2015 - 70.5%
-* 2016 - 73.5%
-* Source: [W3Techs](http://w3techs.com/technologies/history_overview/javascript_library/all/y)
-        `}
-          </Markdown>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Appear fid="1">
-            <Heading size={2} caps fit>
-              Inline JavaScript
-            </Heading>
-          </Appear>
-          <Appear fid="2">
-            <Heading size={2} caps fit textColor="tertiary">
-              AJAX (async)
-            </Heading>
-          </Appear>
-          <Appear fid="3">
-            <Heading size={2} caps fit>
-              Single Page Applications
-            </Heading>
-          </Appear>
-          <Appear fid="3">
-            <Heading size={2} caps fit textColor="tertiary">
-              Universal JavaScript
-            </Heading>
-          </Appear>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
-            Build Tools
-          </Heading>
-          <Layout>
-            <Table>
-              <thead>
-                <TableRow>
-                  <TableHeaderItem>1st Gen.</TableHeaderItem>
-                  <TableHeaderItem>2nd Gen.</TableHeaderItem>
-                  <TableHeaderItem>3rd Gen.</TableHeaderItem>
-                </TableRow>
-              </thead>
-              <tbody>
-                <TableRow>
-                  <TableItem>Make</TableItem>
-                  <TableItem>Grunt</TableItem>
-                  <TableItem>Browserify</TableItem>
-                </TableRow>
-                <TableRow>
-                  <TableItem />
-                  <TableItem>Gulp</TableItem>
-                  <TableItem>Webpack</TableItem>
-                </TableRow>
-                <TableRow>
-                  <TableItem />
-                  <TableItem>Broccoli</TableItem>
-                  <TableItem>JSPM</TableItem>
-                </TableRow>
-              </tbody>
-            </Table>
-          </Layout>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Image src={images.survivejs} margin="40px auto" height="324px" />
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={2}>Solution</Heading>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={4}>Minimal Demo</Heading>
-          <CodePane
-            lang="jsx"
-            source={require("raw-loader!../examples/demo.jsx")}
-            margin="20px auto"
-          />
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={1}>Exercises</Heading>
-          <List>
-            <Appear>
-              <ListItem>Exercise 1</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>*Exercise 2</ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>**Exercise 3</ListItem>
-            </Appear>
-          </List>
         </Slide>
 
         <Slide transition={slideTransition}>
