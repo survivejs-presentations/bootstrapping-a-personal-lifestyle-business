@@ -48,6 +48,7 @@ const images = mapValues(
     jsNew: require("../images/js_new.jpg"),
     kanban: require("../images/kanban.gif"),
     jackie: require("../images/jackie.png"),
+    lifestyle: require("../images/lifestyle.jpg"),
     indieBundle: require("../images/indiebundle.png"),
     javascript: require("../images/javascript.jpg"),
     megaphone: require("../images/megaphone.jpg"),
@@ -658,7 +659,7 @@ export default class Presentation extends React.Component {
           bgImage={images.deadEnd}
           bgDarken={0.75}
         >
-          <Heading size={1}>In Addition</Heading>
+          <Heading size={1}>Old Lifestyle</Heading>
           <List textColor="primary">
             <Appear>
               <ListItem>
@@ -683,7 +684,7 @@ export default class Presentation extends React.Component {
 
         <Slide
           transition={slideTransition}
-          bgImage={images.deadEnd}
+          bgImage={images.lifestyle}
           bgDarken={0.75}
         >
           <Heading size={1}>Refactoring Lifestyle</Heading>
@@ -709,7 +710,7 @@ export default class Presentation extends React.Component {
 
         <Slide
           transition={slideTransition}
-          bgImage={images.deadEnd}
+          bgImage={images.lifestyle}
           bgDarken={0.75}
         >
           <Heading size={1}>Refactoring Lifestyle</Heading>
@@ -771,7 +772,7 @@ export default class Presentation extends React.Component {
 
         <Slide
           transition={slideTransition}
-          bgImage={images.deadEnd}
+          bgImage={images.lifestyle}
           bgDarken={0.75}
         >
           <Heading size={1}>Personal Change</Heading>
@@ -797,7 +798,7 @@ export default class Presentation extends React.Component {
 
         <Slide
           transition={slideTransition}
-          bgImage={images.deadEnd}
+          bgImage={images.lifestyle}
           bgDarken={0.75}
         >
           <Heading size={1}>Personal Change</Heading>
