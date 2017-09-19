@@ -289,24 +289,12 @@ export default class Presentation extends React.Component {
           <Image src={images.jsNew} margin="0px auto 40px" height="650px" />
         </Slide>
 
-        <Slide
-          transition={slideTransition}
-          bgImage={images.javascript}
-          bgDarken={0.75}
-        >
-          <BlockQuote>
-            <Quote>
-              Started from webpack and React. Still exploring the space.
-            </Quote>
-          </BlockQuote>
+        <Slide transition={slideTransition}>
+          <Image src={images.kanban} margin="0px auto 40px" height="279px" />
         </Slide>
 
         <Slide transition={slideTransition}>
           <Image src={images.covers} margin="0px auto 40px" height="600px" />
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Image src={images.kanban} margin="0px auto 40px" height="279px" />
         </Slide>
 
         <Slide transition={slideTransition}>
@@ -755,7 +743,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "Henkilökohtainen" in Finnish
+              Henkilökohtainen in Finnish
             </Heading>
           </Appear>
           <Appear>
@@ -852,7 +840,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "Opit" in Finnish
+              Opit in Finnish
             </Heading>
           </Appear>
           <Appear>
@@ -906,9 +894,12 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={1} fit>
-            Dare to dream, dare to try, and never give up too easily
-          </Heading>
+          <BlockQuote>
+            <Quote>
+              Dare to dream, dare to try, and never give up too easily
+            </Quote>
+            <Cite>Juho Vepsäläinen</Cite>
+          </BlockQuote>
         </Slide>
       </Deck>
     );
