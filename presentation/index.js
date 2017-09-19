@@ -44,8 +44,14 @@ const images = mapValues(
     deadEnd: require("../images/dead-end.jpg"),
     drip: require("../images/drip.jpg"),
     evolution: require("../images/evolution.jpg"),
+    jsOld: require("../images/js_old.jpg"),
+    jsNew: require("../images/js_new.jpg"),
+    kanban: require("../images/kanban.gif"),
+    jackie: require("../images/jackie.png"),
+    indieBundle: require("../images/indiebundle.png"),
     javascript: require("../images/javascript.jpg"),
     megaphone: require("../images/megaphone.jpg"),
+    modulecounts: require("../images/modulecounts.png"),
     openclosed: require("../images/openclosed.jpg"),
     redmonk: require("../images/redmonk.png"),
     survivejs: require("../images/survivejs.png"),
@@ -248,9 +254,33 @@ export default class Presentation extends React.Component {
         <Slide transition={slideTransition}>
           <Layout>
             <Link href="https://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/">
-              <Image src={images.redmonk} width="754px" />
+              <Image src={images.redmonk} height="654px" />
             </Link>
           </Layout>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Module Counts</Heading>
+          <Layout>
+            <Image src={images.modulecounts} height="454px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
+            </Text>
+          </Layout>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="black" notes="">
+          <Image src={images.jsOld} margin="0px auto 40px" height="650px" />
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="black" notes="">
+          <Image src={images.jackie} margin="0px auto 40px" height="381px" />
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="black" notes="">
+          <Image src={images.jsNew} margin="0px auto 40px" height="650px" />
         </Slide>
 
         <Slide
@@ -263,6 +293,14 @@ export default class Presentation extends React.Component {
               Started from webpack and React. Still exploring the space.
             </Quote>
           </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Image src={images.covers} margin="0px auto 40px" height="600px" />
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Image src={images.kanban} margin="0px auto 40px" height="279px" />
         </Slide>
 
         <Slide transition={slideTransition}>
@@ -285,10 +323,6 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
           </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Image src={images.covers} margin="0px auto 40px" height="600px" />
         </Slide>
 
         <Slide
