@@ -233,7 +233,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition}>
-          <Heading caps fit size={1}>
+          <Heading fit size={1}>
             JavaScript Usage on Sites
           </Heading>
           <List>
@@ -396,6 +396,31 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Release Process</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Modeled after open source software development
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Fast, light releases when active</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                1.0.0, 1.1.0, ..., 2.0.0-rc4, 2.0.0, 2.1.0, ..., 2.5.0
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Release notes through the blog</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Continuous improvement based on feedback</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide
           transition={slideTransition}
           bgImage={images.megaphone}
@@ -444,6 +469,51 @@ export default class Presentation extends React.Component {
               <ListItem>
                 Current model - Books + upsell consulting/training
               </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Results</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                Higher quality and better reach than I could have ever reached
+                on my own
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Two books (more on the way), translations, paper books (KDP)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Total: 4000+ readers at Leanpub</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Thousands more outside (site!)</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Results</Heading>
+          <List>
+            <Appear>
+              <ListItem>
+                More than hundred contributors (GitHub, Disqus, direct feedback,
+                Gitter, ...)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                <Link href="https://survivejs.com/blog/blue-arrow-awards-winner-2017/">
+                  Blue Arrow Awards winner 2017 - Finnish Code Ambassador
+                </Link>
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Touring and clients across Europe</ListItem>
             </Appear>
           </List>
         </Slide>
