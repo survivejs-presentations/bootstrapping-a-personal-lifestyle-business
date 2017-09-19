@@ -9,14 +9,14 @@ import {
   Cite,
   //CodePane,
   Deck,
-  //Fill,
+  Fill,
   Heading,
   Image,
   Layout,
   Link,
   List,
   ListItem,
-  //Markdown,
+  Markdown,
   Quote,
   Slide,
   //Table,
@@ -130,6 +130,11 @@ export default class Presentation extends React.Component {
           <Appear>
             <Heading size={4} textColor="primary">
               Personal
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              Lessons Learned
             </Heading>
           </Appear>
         </Slide>
@@ -347,9 +352,6 @@ export default class Presentation extends React.Component {
           <Heading size={1}>Community</Heading>
           <List textColor="primary">
             <Appear>
-              <ListItem>Semi-open approach</ListItem>
-            </Appear>
-            <Appear>
               <ListItem>
                 Most content available through web (needed visibility to help
                 with marketing) and open for comments
@@ -364,6 +366,51 @@ export default class Presentation extends React.Component {
               <ListItem>Collaboration through GitHub (edits, PRs)</ListItem>
             </Appear>
           </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.openclosed}
+          bgDarken={0.75}
+        >
+          <Layout>
+            <Fill>
+              <Heading
+                size={4}
+                caps
+                textColor="secondary"
+                bgColor="white"
+                margin={10}
+              >
+                Open
+              </Heading>
+              <Markdown style={{ color: "white" }}>
+                {`
+* Easier to market
+* Easier to collaborate
+* Harder to monetize
+        `}
+              </Markdown>
+            </Fill>
+            <Fill>
+              <Heading
+                size={4}
+                caps
+                textColor="secondary"
+                bgColor="white"
+                margin={10}
+              >
+                Closed
+              </Heading>
+              <Markdown style={{ color: "white" }}>
+                {`
+* Harder to market
+* Harder to collaborate
+* Easier to monetize
+        `}
+              </Markdown>
+            </Fill>
+          </Layout>
         </Slide>
 
         <Slide
@@ -518,6 +565,16 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
+        <Slide transition={slideTransition} bgColor="black" notes="">
+          <Link href="http://www.reactindiebundle.com/">
+            <Image
+              src={images.indieBundle}
+              margin="0px auto 40px"
+              height="600px"
+            />
+          </Link>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             Lifestyle
@@ -637,25 +694,50 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
             <Appear>
-              <ListItem>An opportunity to escape?</ListItem>
+              <ListItem>
+                An opportunity to go beyond my <b>comfort zone</b>
+              </ListItem>
             </Appear>
             <Appear>
               <ListItem>As a result I became a nomad unintentionally</ListItem>
             </Appear>
             <Appear>
+              <ListItem>Two weeks in Finland since I left it in March</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Refactoring Lifestyle</Heading>
+          <List textColor="primary">
+            <Appear>
               <ListItem>
                 I settled with Vienna due to new connections and spent the
                 Summer of my life (<Link
                   href="https://medium.com/@bebraw/how-a-month-in-vienna-changed-the-way-i-think-about-life-ba87da8c28a9"
-                  textColor="primary"
+                  textColor="tertiary"
                 >
                   long story
                 </Link>)
               </ListItem>
             </Appear>
             <Appear>
+              <ListItem>I still travel when a client needs my help</ListItem>
+            </Appear>
+            <Appear>
               <ListItem>
-                Living less regimented yet more enjoyable life now
+                Living less regimented yet more enjoyable life on my own terms
+                now
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Success in business enabled a change in lifestyle and continues
+                to maintain it
               </ListItem>
             </Appear>
           </List>
@@ -672,7 +754,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              Henkilökohtainen in Finnish
+              "Henkilökohtainen" in Finnish
             </Heading>
           </Appear>
           <Appear>
@@ -687,13 +769,49 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        <Slide transition={slideTransition}>
-          <Image src={images.evolution} margin="0px auto 40px" width="590px" />
-          <Text>
-            <Link href="http://www.followingthenerd.com/spotlight/blog-the-angry-young-nerd-looks-at-evolution/">
-              Source: Following the Nerd
-            </Link>
-          </Text>
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Personal Change</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>
+                In personal business you are <b>the most valuable</b> asset
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Therefore it makes sense to invest into yourself
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Also a risk - personal failures are visible in business and the
+                other way around!
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Personal Change</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>First I grew a business</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Only to realize I have to grow myself</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>And the process never seems to end</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="black">
@@ -706,11 +824,90 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Image src={images.evolution} margin="0px auto 40px" width="590px" />
+          <Text>
+            <Link href="http://www.followingthenerd.com/spotlight/blog-the-angry-young-nerd-looks-at-evolution/">
+              Source: Following the Nerd
+            </Link>
+          </Text>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="black">
           <BlockQuote>
             <Quote>#nolife &rarr; #life</Quote>
             <Cite>Juho Vepsäläinen</Cite>
           </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={2} textColor="tertiary">
+            Lessons Learned
+          </Heading>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              AKA
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              "Opit" in Finnish
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={4} textColor="primary">
+              which means
+            </Heading>
+          </Appear>
+          <Appear>
+            <Heading size={2} textColor="tertiary">
+              "Lessons Learned" in English
+            </Heading>
+          </Appear>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1} fit>
+            Writing books is hard work
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1} fit>
+            Marketing and selling is even harder
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1} fit>
+            And personal growth is the hardest
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>
+            Focus on developing trust and delivering value straight from the
+            start
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1} fit>
+            Doing * Telling === Luck
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>
+            No matter how much you evolve, there is always something new to
+            learn and discover
+          </Heading>
+        </Slide>
+
+        <Slide transition={slideTransition} bgColor="secondary">
+          <Heading size={1} fit>
+            Dare to dream, dare to try, and never give up too easily
+          </Heading>
         </Slide>
       </Deck>
     );
