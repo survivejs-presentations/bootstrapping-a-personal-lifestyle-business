@@ -7,23 +7,23 @@ import {
   Appear,
   BlockQuote,
   Cite,
-  CodePane,
+  //CodePane,
   Deck,
   //Fill,
   Heading,
   Image,
-  Layout,
+  //Layout,
   Link,
   List,
   ListItem,
-  Markdown,
+  //Markdown,
   Quote,
   Slide,
-  Table,
-  TableRow,
-  TableHeaderItem,
-  TableItem
-  //Text
+  //Table,
+  //TableRow,
+  //TableHeaderItem,
+  //TableItem,
+  Text
 } from "spectacle";
 
 // Import image preloader util
@@ -42,9 +42,9 @@ const images = mapValues(
   {
     deadEnd: require("../images/dead-end.jpg"),
     drip: require("../images/drip.jpg"),
+    evolution: require("../images/evolution.jpg"),
     javascript: require("../images/javascript.jpg"),
     megaphone: require("../images/megaphone.jpg"),
-    survivejs: require("../images/survivejs.png"),
     openclosed: require("../images/openclosed.jpg"),
     telaviv: require("../images/telaviv.jpg"),
     wheel: require("../images/wheel.jpg")
@@ -381,6 +381,123 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Old Lifestyle</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>7:00-7:30 - Wake up</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                7:30-8:00 - Eat breakfast, check mail, and RSS
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>8:00-11:30 - Work (the most important task)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>11:30-12:00 - Quick run on a threadmill</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>12:00-12:30 - Microwave lunch</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Old Lifestyle</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>12:30-16:30 - Work (less important tasks)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>16:30-17:00 - Quick run on a threadmill</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>17:00-17:30 - Dinner</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>17:30-21:00 - Chill (computer games, sauna)</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>21:00-07:00 - Sleep (possibly +1-2 hours)</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>In Addition</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>
+                Spent time in nature and occasional drawing classes to escape
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Especially Winters were tough (darkness and isolation!)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Minimalist style</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Still managed to contribute but what if there was more?
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.deadEnd}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Refactoring Lifestyle</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>
+                I was invited to an April tour by ReactiveConf due to my work
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>An opportunity to escape?</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>As a result I became a nomad unintentionally</ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                I settled with Vienna due to new connections and spent the
+                Summer of my life (<Link
+                  href="https://medium.com/@bebraw/how-a-month-in-vienna-changed-the-way-i-think-about-life-ba87da8c28a9"
+                  textColor="primary"
+                >
+                  long story
+                </Link>)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Living less regimented yet more enjoyable life now
+              </ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="secondary">
           <Heading size={2} textColor="tertiary">
             Personal
@@ -407,38 +524,30 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
+        <Slide transition={slideTransition}>
+          <Image src={images.evolution} margin="0px auto 40px" width="590px" />
+          <Text>
+            <Link href="http://www.followingthenerd.com/spotlight/blog-the-angry-young-nerd-looks-at-evolution/">
+              Source: Following the Nerd
+            </Link>
+          </Text>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="black">
           <BlockQuote>
             <Quote>
-              There are two great days in a person’s life – the day we are born
-              and the day we discover why
+              When we are no longer able to change a situation, we are
+              challenged to change ourselves
             </Quote>
-            <Cite>William Barclay</Cite>
+            <Cite>Viktor E. Frankl</Cite>
           </BlockQuote>
         </Slide>
 
-        <Slide transition={slideTransition} bgColor="secondary">
-          <Heading size={2} textColor="tertiary" fit>
-            Conclusion
-          </Heading>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Link href="https://www.survivejs.com/">
-            <Heading size={1}>SurviveJS</Heading>
-          </Link>
-          <Image src={images.survivejs} margin="0px auto 40px" height="524px" />
-        </Slide>
-
-        <Slide transition={slideTransition} bgColor="tertiary">
-          <Heading size={1} caps fit textColor="primary">
-            Made in Finland by
-          </Heading>
-          <Link href="https://twitter.com/bebraw">
-            <Heading caps fit size={2} textColor="secondary">
-              Juho Vepsäläinen
-            </Heading>
-          </Link>
+        <Slide transition={slideTransition} bgColor="black">
+          <BlockQuote>
+            <Quote>#nolife &rarr; #life</Quote>
+            <Cite>Juho Vepsäläinen</Cite>
+          </BlockQuote>
         </Slide>
       </Deck>
     );
