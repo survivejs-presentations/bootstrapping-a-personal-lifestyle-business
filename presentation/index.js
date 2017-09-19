@@ -12,7 +12,7 @@ import {
   //Fill,
   Heading,
   Image,
-  //Layout,
+  Layout,
   Link,
   List,
   ListItem,
@@ -40,12 +40,15 @@ require("./custom.css");
 const slideTransition = ["slide"];
 const images = mapValues(
   {
+    covers: require("../images/covers.jpg"),
     deadEnd: require("../images/dead-end.jpg"),
     drip: require("../images/drip.jpg"),
     evolution: require("../images/evolution.jpg"),
     javascript: require("../images/javascript.jpg"),
     megaphone: require("../images/megaphone.jpg"),
     openclosed: require("../images/openclosed.jpg"),
+    redmonk: require("../images/redmonk.png"),
+    survivejs: require("../images/survivejs.png"),
     telaviv: require("../images/telaviv.jpg"),
     wheel: require("../images/wheel.jpg")
   },
@@ -181,33 +184,85 @@ export default class Presentation extends React.Component {
           bgImage={images.javascript}
           bgDarken={0.75}
         >
-          <Heading size={1}>Background</Heading>
-          <List textColor="primary">
-            <Appear>
-              <ListItem>
-                I came by a webpack related blog post by Christian Alfoni and
-                started brewing a book idea (2014 October)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <Link href="https://survivejs.com/" textColor="primary">
-                  SurviveJS
-                </Link>{" "}
-                was born as a result (2015 January)
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                <b>Business idea:</b> help people deal with JavaScript
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Started from webpack and React. Still exploring the space.
-              </ListItem>
-            </Appear>
+          <BlockQuote>
+            <Quote>
+              I gave the first presentation under SurviveJS name at AgileJkl and
+              bought the domain
+            </Quote>
+            <Cite>2013 August</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              I came by a webpack related blog post by Christian Alfoni and
+              started brewing a book idea
+            </Quote>
+            <Cite>2014 October</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Link href="https://www.survivejs.com/">
+            <Heading size={1}>SurviveJS</Heading>
+          </Link>
+          <Image src={images.survivejs} margin="0px auto 40px" height="524px" />
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              <b>Business idea:</b> help people deal with JavaScript
+            </Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading caps fit size={1}>
+            JavaScript Usage on Sites
+          </Heading>
+          <List>
+            <ListItem>2011 - 43.0%</ListItem>
+            <ListItem>2013 - 55.0%</ListItem>
+            <ListItem>2015 - 62.0%</ListItem>
+            <ListItem>2016 - 68.0%</ListItem>
+            <ListItem>2017 - 73.5%</ListItem>
+            <ListItem>
+              Source:{" "}
+              <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">
+                W3Techs
+              </Link>
+            </ListItem>
           </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Layout>
+            <Link href="https://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/">
+              <Image src={images.redmonk} width="754px" />
+            </Link>
+          </Layout>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              Started from webpack and React. Still exploring the space.
+            </Quote>
+          </BlockQuote>
         </Slide>
 
         <Slide transition={slideTransition}>
@@ -230,6 +285,10 @@ export default class Presentation extends React.Component {
               </ListItem>
             </Appear>
           </List>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Image src={images.covers} margin="0px auto 40px" height="600px" />
         </Slide>
 
         <Slide
