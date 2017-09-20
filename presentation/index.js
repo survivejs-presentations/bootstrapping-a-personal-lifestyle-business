@@ -180,6 +180,11 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
+                Became involved with open source in 2005 (Blender)
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
                 Freelancing through a co-op (RIP) and startup experiences
               </ListItem>
             </Appear>
@@ -321,44 +326,6 @@ export default class Presentation extends React.Component {
 
         <Slide
           transition={slideTransition}
-          bgImage={images.telaviv}
-          bgDarken={0.75}
-        >
-          <BlockQuote>
-            <Quote>
-              If you want to travel fast, travel alone. To travel far, travel
-              together.
-            </Quote>
-            <Cite>African proverb</Cite>
-          </BlockQuote>
-        </Slide>
-
-        <Slide
-          transition={slideTransition}
-          bgImage={images.openclosed}
-          bgDarken={0.75}
-        >
-          <Heading size={1}>Community</Heading>
-          <List textColor="primary">
-            <Appear>
-              <ListItem>
-                Most content available through web (needed visibility to help
-                with marketing) and open for comments
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Set up a book site and chat early on to develop community
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>Collaboration through GitHub (edits, PRs)</ListItem>
-            </Appear>
-          </List>
-        </Slide>
-
-        <Slide
-          transition={slideTransition}
           bgImage={images.openclosed}
           bgDarken={0.75}
         >
@@ -400,6 +367,44 @@ export default class Presentation extends React.Component {
               </Markdown>
             </Fill>
           </Layout>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.telaviv}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              If you want to travel fast, travel alone. To travel far, travel
+              together.
+            </Quote>
+            <Cite>African proverb</Cite>
+          </BlockQuote>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.openclosed}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Community</Heading>
+          <List textColor="primary">
+            <Appear>
+              <ListItem>
+                Most content available through web (needed visibility to help
+                with marketing) and open for comments
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Set up a book site and chat early on to develop community
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>Collaboration through GitHub (edits, PRs)</ListItem>
+            </Appear>
+          </List>
         </Slide>
 
         <Slide
@@ -469,8 +474,7 @@ export default class Presentation extends React.Component {
             </Appear>
             <Appear>
               <ListItem>
-                Community service through developer interviews (60+ and
-                counting)
+                Community service through developer interviews (60+)
               </ListItem>
             </Appear>
             <Appear>
@@ -514,8 +518,7 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem>
-                Higher quality and better reach than I could have ever reached
-                on my own
+                Better quality and reach than I could have reached on my own
               </ListItem>
             </Appear>
             <Appear>
@@ -634,10 +637,10 @@ export default class Presentation extends React.Component {
               <ListItem>17:00-17:30 - Dinner</ListItem>
             </Appear>
             <Appear>
-              <ListItem>17:30-21:00 - Chill (computer games, sauna)</ListItem>
+              <ListItem>17:30-22:00 - Chill (computer games, sauna)</ListItem>
             </Appear>
             <Appear>
-              <ListItem>21:00-07:00 - Sleep (possibly +1-2 hours)</ListItem>
+              <ListItem>22:00-07:00 - Sleep</ListItem>
             </Appear>
           </List>
         </Slide>
@@ -813,6 +816,13 @@ export default class Presentation extends React.Component {
           </BlockQuote>
         </Slide>
 
+        <Slide transition={slideTransition} bgColor="black">
+          <BlockQuote>
+            <Quote>#nolife &rarr; #life</Quote>
+            <Cite>Juho Vepsäläinen</Cite>
+          </BlockQuote>
+        </Slide>
+
         <Slide transition={slideTransition}>
           <Image src={images.evolution} margin="0px auto 40px" width="590px" />
           <Text>
@@ -820,13 +830,6 @@ export default class Presentation extends React.Component {
               Source: Following the Nerd
             </Link>
           </Text>
-        </Slide>
-
-        <Slide transition={slideTransition} bgColor="black">
-          <BlockQuote>
-            <Quote>#nolife &rarr; #life</Quote>
-            <Cite>Juho Vepsäläinen</Cite>
-          </BlockQuote>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
