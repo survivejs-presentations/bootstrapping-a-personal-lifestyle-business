@@ -425,7 +425,7 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>
                 Site using{" "}
-                <Link href="https://antwar.js.org/" textColor="primary">
+                <Link href="https://antwar.js.org/" textColor="tertiary">
                   Antwar
                 </Link>{" "}
                 (own tool), GitHub Pages, Cloudflare
@@ -693,9 +693,6 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>As a result I became a nomad unintentionally</ListItem>
             </Appear>
-            <Appear>
-              <ListItem>Two weeks in Finland since I left it in March</ListItem>
-            </Appear>
           </List>
         </Slide>
 
@@ -706,6 +703,9 @@ export default class Presentation extends React.Component {
         >
           <Heading size={1}>Refactoring Lifestyle</Heading>
           <List textColor="primary">
+            <Appear>
+              <ListItem>Two weeks in Finland since I left it in March</ListItem>
+            </Appear>
             <Appear>
               <ListItem>
                 I settled with Vienna due to new connections and spent the
@@ -720,16 +720,30 @@ export default class Presentation extends React.Component {
             <Appear>
               <ListItem>I still travel when a client needs my help</ListItem>
             </Appear>
+          </List>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.lifestyle}
+          bgDarken={0.75}
+        >
+          <Heading size={1}>Refactoring Lifestyle</Heading>
+          <List textColor="primary">
             <Appear>
               <ListItem>
-                Living less regimented yet more enjoyable life on my own terms
-                now
+                Living less regimented yet more enjoyable life
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
                 Success in business enabled a change in lifestyle and continues
                 to maintain it
+              </ListItem>
+            </Appear>
+            <Appear>
+              <ListItem>
+                Big question - what kind of lifestyle I want to develop?
               </ListItem>
             </Appear>
           </List>
@@ -766,25 +780,33 @@ export default class Presentation extends React.Component {
           bgImage={images.lifestyle}
           bgDarken={0.75}
         >
-          <Heading size={1}>Personal Change</Heading>
-          <List textColor="primary">
-            <Appear>
-              <ListItem>
-                In personal business you are <b>the most valuable</b> asset
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Therefore it makes sense to invest into yourself
-              </ListItem>
-            </Appear>
-            <Appear>
-              <ListItem>
-                Also a risk - personal failures are visible in business and the
-                other way around!
-              </ListItem>
-            </Appear>
-          </List>
+          <BlockQuote>
+            <Quote>
+              In personal business you are <b>the most valuable</b> asset
+            </Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.lifestyle}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>Therefore it makes sense to invest into yourself</Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.lifestyle}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              Also a risk - personal life and business are interconnected!
+            </Quote>
+          </BlockQuote>
         </Slide>
 
         <Slide
@@ -887,12 +909,17 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit>
             Doing * Telling === Luck
           </Heading>
+          <br />
+          <Text>
+            <Link href="http://www.codusoperandi.com/posts/increasing-your-luck-surface-area">
+              Source: Codus Operandi
+            </Link>
+          </Text>
         </Slide>
 
         <Slide transition={slideTransition}>
           <Heading size={1}>
-            No matter how much you evolve, there is always something new to
-            learn and discover
+            There is always something new to learn and discover
           </Heading>
         </Slide>
 
