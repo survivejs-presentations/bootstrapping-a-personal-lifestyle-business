@@ -161,7 +161,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "Trying" in English
+              “Trying” in English
             </Heading>
           </Appear>
         </Slide>
@@ -490,18 +490,18 @@ export default class Presentation extends React.Component {
           <List>
             <Appear>
               <ListItem>
-                Products - I.e. writing books. Successful but time consuming.
+                Products - i.e. writing books. Successful but time consuming.
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Contracting - I.e. developing specific functionality. Good short
+                Contracting - i.e. developing specific functionality. Good short
                 term but sacrifices long term success.
               </ListItem>
             </Appear>
             <Appear>
               <ListItem>
-                Consulting and training - I.e. helping with specific problem(s).
+                Consulting and training - i.e. helping with specific problem(s).
                 Better but a similar problem (less pronounced).
               </ListItem>
             </Appear>
@@ -588,7 +588,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "The way of living" in English
+              “The way of living” in English
             </Heading>
           </Appear>
         </Slide>
@@ -770,7 +770,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "Personal" in English
+              “Personal” in English
             </Heading>
           </Appear>
         </Slide>
@@ -847,11 +847,6 @@ export default class Presentation extends React.Component {
 
         <Slide transition={slideTransition}>
           <Image src={images.evolution} margin="0px auto 40px" width="590px" />
-          <Text>
-            <Link href="http://www.followingthenerd.com/spotlight/blog-the-angry-young-nerd-looks-at-evolution/">
-              Source: Following the Nerd
-            </Link>
-          </Text>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="secondary">
@@ -875,7 +870,7 @@ export default class Presentation extends React.Component {
           </Appear>
           <Appear>
             <Heading size={2} textColor="tertiary">
-              "Lessons Learned" in English
+              “Lessons Learned” in English
             </Heading>
           </Appear>
         </Slide>
