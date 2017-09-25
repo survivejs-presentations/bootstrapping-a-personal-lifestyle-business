@@ -54,7 +54,6 @@ const images = mapValues(
     megaphone: require("../images/megaphone.jpg"),
     modulecounts: require("../images/modulecounts.png"),
     openclosed: require("../images/openclosed.jpg"),
-    redmonk: require("../images/redmonk.png"),
     survivejs: require("../images/survivejs.png"),
     telaviv: require("../images/telaviv.jpg"),
     wheel: require("../images/wheel.jpg")
@@ -260,14 +259,6 @@ export default class Presentation extends React.Component {
               </Link>
             </ListItem>
           </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Layout>
-            <Link href="https://redmonk.com/sogrady/2017/06/08/language-rankings-6-17/">
-              <Image src={images.redmonk} height="654px" />
-            </Link>
-          </Layout>
         </Slide>
 
         <Slide transition={slideTransition}>
