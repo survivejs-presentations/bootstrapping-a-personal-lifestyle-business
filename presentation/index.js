@@ -195,53 +195,6 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide
-          transition={slideTransition}
-          bgImage={images.javascript}
-          bgDarken={0.75}
-        >
-          <BlockQuote>
-            <Quote>
-              I gave the first presentation under SurviveJS name at AgileJkl and
-              bought the domain
-            </Quote>
-            <Cite>2013 August</Cite>
-          </BlockQuote>
-        </Slide>
-
-        <Slide
-          transition={slideTransition}
-          bgImage={images.javascript}
-          bgDarken={0.75}
-        >
-          <BlockQuote>
-            <Quote>
-              I came by a webpack related blog post by Christian Alfoni and
-              started brewing a book idea
-            </Quote>
-            <Cite>2014 October</Cite>
-          </BlockQuote>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Link href="https://www.survivejs.com/">
-            <Heading size={1}>SurviveJS</Heading>
-          </Link>
-          <Image src={images.survivejs} margin="0px auto 40px" height="524px" />
-        </Slide>
-
-        <Slide
-          transition={slideTransition}
-          bgImage={images.javascript}
-          bgDarken={0.75}
-        >
-          <BlockQuote>
-            <Quote>
-              <b>Business idea:</b> help people deal with JavaScript
-            </Quote>
-          </BlockQuote>
-        </Slide>
-
         <Slide transition={slideTransition}>
           <Heading fit size={1}>
             JavaScript Usage on Sites
@@ -273,6 +226,20 @@ export default class Presentation extends React.Component {
           </Layout>
         </Slide>
 
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              I came by a webpack related blog post by Christian Alfoni and
+              started brewing a book idea
+            </Quote>
+            <Cite>2014 October</Cite>
+          </BlockQuote>
+        </Slide>
+
         <Slide transition={slideTransition} bgColor="black" notes="">
           <Image src={images.jsOld} margin="0px auto 40px" height="650px" />
         </Slide>
@@ -283,6 +250,25 @@ export default class Presentation extends React.Component {
 
         <Slide transition={slideTransition} bgColor="black" notes="">
           <Image src={images.jsNew} margin="0px auto 40px" height="650px" />
+        </Slide>
+
+        <Slide
+          transition={slideTransition}
+          bgImage={images.javascript}
+          bgDarken={0.75}
+        >
+          <BlockQuote>
+            <Quote>
+              <b>Business idea:</b> help people deal with JavaScript
+            </Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Link href="https://www.survivejs.com/">
+            <Heading size={1}>SurviveJS</Heading>
+          </Link>
+          <Image src={images.survivejs} margin="0px auto 40px" height="524px" />
         </Slide>
 
         <Slide transition={slideTransition}>
