@@ -47,13 +47,13 @@ const images = mapValues(
     jsOld: require("../images/js_old.jpg"),
     jsNew: require("../images/js_new.jpg"),
     kanban: require("../images/kanban.gif"),
-    jackie: require("../images/jackie.png"),
     lifestyle: require("../images/lifestyle.jpg"),
     indieBundle: require("../images/indiebundle.png"),
     javascript: require("../images/javascript.jpg"),
     megaphone: require("../images/megaphone.jpg"),
     modulecounts: require("../images/modulecounts.png"),
     openclosed: require("../images/openclosed.jpg"),
+    spede: require("../images/spede.jpg"),
     survivejs: require("../images/survivejs.png"),
     telaviv: require("../images/telaviv.jpg"),
     wheel: require("../images/wheel.jpg")
@@ -245,7 +245,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide transition={slideTransition} bgColor="black" notes="">
-          <Image src={images.jackie} margin="0px auto 40px" height="381px" />
+          <Image src={images.spede} margin="0px auto 40px" height="481px" />
         </Slide>
 
         <Slide transition={slideTransition} bgColor="black" notes="">
