@@ -23,7 +23,7 @@ import {
   //TableRow,
   //TableHeaderItem,
   //TableItem,
-  Text
+  Text,
 } from "spectacle";
 
 // Import image preloader util
@@ -56,7 +56,7 @@ const images = mapValues(
     spede: require("../images/spede.jpg"),
     survivejs: require("../images/survivejs.png"),
     telaviv: require("../images/telaviv.jpg"),
-    wheel: require("../images/wheel.jpg")
+    wheel: require("../images/wheel.jpg"),
   },
   v => v.replace("/", "")
 );
@@ -67,7 +67,7 @@ const theme = createTheme({
   primary: "white",
   secondary: "black",
   tertiary: "#09b5c4",
-  quartenary: "rgba(255, 219, 169, 0.43)"
+  quartenary: "rgba(255, 219, 169, 0.43)",
 });
 
 export default class Presentation extends React.Component {
@@ -195,37 +195,6 @@ export default class Presentation extends React.Component {
           </List>
         </Slide>
 
-        <Slide transition={slideTransition}>
-          <Heading fit size={1}>
-            JavaScript Usage on Sites
-          </Heading>
-          <List>
-            <ListItem>2011 - 43.0%</ListItem>
-            <ListItem>2013 - 55.0%</ListItem>
-            <ListItem>2015 - 62.0%</ListItem>
-            <ListItem>2016 - 68.0%</ListItem>
-            <ListItem>2017 - 73.5%</ListItem>
-            <ListItem>
-              Source:{" "}
-              <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">
-                W3Techs
-              </Link>
-            </ListItem>
-          </List>
-        </Slide>
-
-        <Slide transition={slideTransition}>
-          <Heading size={1}>Module Counts</Heading>
-          <Layout>
-            <Image src={images.modulecounts} height="454px" />
-          </Layout>
-          <Layout>
-            <Text>
-              <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
-            </Text>
-          </Layout>
-        </Slide>
-
         <Slide
           transition={slideTransition}
           bgImage={images.javascript}
@@ -238,6 +207,18 @@ export default class Presentation extends React.Component {
             </Quote>
             <Cite>2014 October</Cite>
           </BlockQuote>
+        </Slide>
+
+        <Slide transition={slideTransition}>
+          <Heading size={1}>Module Counts</Heading>
+          <Layout>
+            <Image src={images.modulecounts} height="454px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
+            </Text>
+          </Layout>
         </Slide>
 
         <Slide transition={slideTransition} bgColor="black" notes="">
